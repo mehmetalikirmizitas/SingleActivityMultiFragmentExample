@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/avatar_change_screen_color"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.avatarChange.AvatarChangeFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:overScrollMode="never"
+        android:layout_marginHorizontal="@dimen/default_margin_large"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/avatarRecyclerView"
+        tools:listitem="@layout/recycler_view_photo_selector_view"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

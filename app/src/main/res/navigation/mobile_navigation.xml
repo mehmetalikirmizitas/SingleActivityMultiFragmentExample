@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/navigation_battle_active"
+        android:name="com.example.bottom_navigation.ui.BattleFragment"
+        android:label="@string/title_battle"
+        tools:layout="@layout/fragment_battle" />
+
+    <fragment
+        android:id="@+id/navigation_my_decks_passive"
+        android:name="com.example.bottom_navigation.ui.MyDecksFragment"
+        android:label="@string/title_my_deck"
+        tools:layout="@layout/fragment_my_decks" />
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.example.bottom_navigation.ui.ProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_navigation_notifications_to_avatarChangeFragment"
+            app:destination="@id/avatarChangeFragment"
+            app:enterAnim="@anim/slide_in_down"
+            app:exitAnim="@anim/slide_out_up"
+            app:popEnterAnim="@anim/slide_in_up"
+            app:popExitAnim="@anim/slide_out_down" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.bottom_navigation.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_navigation_battle_active"
+            app:destination="@id/navigation_battle_active"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatarChangeFragment"
+        android:name="com.example.bottom_navigation.ui.avatarChange.AvatarChangeFragment"
+        android:label="fragment_avatar_change"
+        tools:layout="@layout/fragment_avatar_change" />
+</navigation>

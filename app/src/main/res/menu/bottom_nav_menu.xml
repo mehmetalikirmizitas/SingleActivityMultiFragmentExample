@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_battle_active"
+        android:icon="@drawable/ic_battle_active"
+        android:title="@string/title_battle" />
+
+    <item
+        android:id="@+id/navigation_my_decks_passive"
+        android:icon="@drawable/ic_my_decks"
+        android:title="@string/title_my_deck" />
+
+    <item
+        android:id="@+id/navigation_profile"
+        android:icon="@drawable/ic_profile_passive"
+        android:title="@string/title_profile" />
+
+</menu>

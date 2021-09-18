@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">BottomNavigationExample</string>
+    <string name="title_battle">Battle</string>
+    <string name="title_my_deck">Decklerim</string>
+    <string name="title_profile">Profil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="total_score_number">700</string>
+    <string name="total_score_text">Puan</string>
+    <string name="level_number">Level 15</string>
+    <string name="two_players">İki Oyuncu</string>
+    <string name="one_player">Tek Oyuncu</string>
+    <string name="play_now">Şimdi Oyna</string>
+    <string name="my_decks_screen_title">Empty State Title</string>
+    <string name="my_deck_screen_description">empty state sub word</string>
+    <string name="whats_decky">decky nedir?</string>
+    <string name="name">John Doe</string>
+    <string name="battle_text">Battle</string>
+    <string name="follow_us">Bizi takip edin</string>
+    <string name="number_of_battle_total">12</string>
+    <string name="number_of_battle_win">9</string>
+</resources>
